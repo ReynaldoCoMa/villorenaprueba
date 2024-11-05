@@ -1,0 +1,232 @@
+@media (max-width: 480px) {
+    html{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: linear-gradient(to bottom, #00D3A8, #00B3B7);
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    div{
+        /*border: solid 3px black;
+        width: 100%;
+        height: 100%;*/
+    }
+
+    .logo img {
+        max-width: 100%; /* Ensures the logo fits within the container */
+        height: auto;    /* Keeps the aspect ratio intact */
+    }
+
+    .villordo img {
+        max-width: 100%; /* Ensures the logo fits within the container */
+        height: auto; 
+          /* Keeps the aspect ratio intact */
+    }
+
+    .villordo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Letras.Villorena {
+      text-align: center; /* Centers the image horizontally */
+    }
+
+    .Servicio{
+        background-color: #00fffb;
+    }
+
+    .TipoServicio{
+        width: 10rem;
+        height: 20rem;
+    }
+
+    .button {
+        display: block;
+        width: 320px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        position: relative;
+        transform: translatez(0);
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: normal;
+        box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+      }
+      
+      .instagram {
+        text-align: center;
+        border-radius: 50px;
+        padding: 26px;
+        color: white;
+        background: #007B9D;
+        transition: all 0.2s ease-out 0s;
+      }
+      
+      .gradient {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        bottom: auto;
+        margin: auto;
+        z-index: -1;
+        background: radial-gradient(90px circle at top center, rgba(0, 211, 168, 1) 30%, rgba(255,255,255,0));
+        transition: all 0s ease-out 0s;
+        transform: translatex(-140px);
+        animation: 18s linear 0s infinite move;
+      }
+      
+      @keyframes move {
+        0% {
+          transform: translatex(-140px);
+        }
+        25% {
+          transform: translatex(140px);
+          opacity: 0.3;
+        }
+        50% {
+          transform: translatex(140px);
+          opacity: 1;
+          background: radial-gradient(90px circle at bottom center, rgba(0, 211, 168, 1) 30%, rgba(255,255,255,0));
+        }
+        75% {
+          transform: translatex(-140px);
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+          transform: translatex(-140px);
+          background: radial-gradient(90px circle at top center, rgba(0, 211, 168, 1) 30%, rgba(255,255,255,0));
+        }
+      }
+
+      .boton-about{
+        background-color: #007B9D;
+        border: 0;
+        padding: 10px;
+        border-radius: 35px;
+        margin-right: 1rem;
+
+
+      }
+
+      .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+    
+
+      .logonombre{
+        float: left;
+        padding: 10px;
+
+      }
+
+    .TopBar{
+        width: 100vw;
+        height: 60px;
+    }
+
+    .Welcome h1, .Welcome h4{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .Welcome h1{
+        text-shadow: 0 0 10px #a9a9a9, 0 0 20px #ffffff, 0 0 30px #9f9f9f, 0 0 40px #ffffff;
+        transform: scaleY(2);
+    }
+
+    .nombre-intro{
+        padding: 1rem;
+    }
+
+    .middle p{
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: whitesmoke;
+        padding: 1rem;
+    }
+
+    /*FONDOS*/
+    .TopBar{
+        width: 100vw;
+        height: 100%;
+        background: radial-gradient(circle, #066F73, #01101E);
+    }
+
+    .Welcome{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        width: 100vw;
+        background: 
+        
+        radial-gradient(circle 200px at 90% 20%, rgba(54, 198, 255, 0.3), transparent 70%),
+        radial-gradient(circle 100px at 20% 60%, #008F80, #05ad8b),
+        radial-gradient(circle 100px at 20% 60%, #79fff2, #109393),
+        radial-gradient(circle, rgb(19, 102, 96), transparent 70%),
+        radial-gradient(circle, #468A97, #002F39);
+        background-blend-mode: overlay;
+    }
+
+    .villordo{
+        background-image: url(./public/assets/PAGINA-WEB-fondo-2.jpg);
+        background-size: cover;
+    }
+
+    .middle{
+        background-image: url(./public/assets/PAGINA-WEB-fondo-2.jpg);
+        background-size: cover;
+    }
+
+    .middle {
+        position: relative; 
+        overflow: hidden; 
+      }
+      
+    .middle::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(./public/assets/PAGINA-WEB-fondo-2.jpg);
+        background-size: cover;
+        filter: blur(10px); 
+        z-index: 0; 
+    }
+
+    .middle::after {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2); 
+        z-index: 1; 
+      }
+      
+    .middle > * {
+        position: relative; 
+        z-index: 2; 
+    }
+}
+
